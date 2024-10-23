@@ -1,5 +1,27 @@
 # Pablo-Portfolio
 Data Science portfolio
+
+# Portafolio de Proyectos
+
+¡Bienvenido a mi portafolio de proyectos! Soy [Tu Nombre], un [profesión o rol] apasionado por [temas de interés, como ciencia de datos, desarrollo web, etc.]. Aquí puedes encontrar algunos de los proyectos en los que he estado trabajando.
+
+## Proyectos Destacados
+
+1. [**Chess Gender Comparison API**](https://github.com/tu-usuario/chess-gender-comparison-api)  
+   Comparación del rendimiento ajedrecístico masculino y femenino a nivel mundial utilizando datos de la FIDE.  
+   Tecnologías: Python, Flask, GeoPandas.
+
+2. [**Proyecto 2**](https://github.com/tu-usuario/proyecto-2)  
+   Breve descripción del segundo proyecto.
+   
+3. [**Proyecto 3**](https://github.com/tu-usuario/proyecto-3)  
+   Breve descripción del tercer proyecto.
+
+## Contacto
+
+- [LinkedIn](https://linkedin.com/in/tu-usuario)
+- [Correo electrónico](mailto:tu-email@gmail.com)
+
 # Chess Gender Comparison API
 
 ## Descripción del Proyecto
