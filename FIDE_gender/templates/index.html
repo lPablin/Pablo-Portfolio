@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female National Players Plot</title>
+</head>
+<body>
+    <h1>Interactive Plot: Female National Players</h1>
+    <form method="POST">
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            {% for country in countries %}
+                <option value="{{ country }}" {% if country == selected_country %}selected{% endif %}>{{ country }}</option>
+            {% endfor %}
+        </select>
+
+        <br><br>
+        <label for="year_start">Year Start:</label>
+        <input type="number" id="year_start" name="year_start" value="{{ year_range.start }}" min="1999" max="2020">
+
+        <br><br>
+        <label for="year_end">Year End:</label>
+        <input type="number" id="year_end" name="year_end" value="{{ year_range.stop - 1 }}" min="1999" max="2020">
+
+        <br><br>
+        <label for="top_players">Number of Top Players:</label>
+        <input type="number" id="top_players" name="top_players" value="10" min="1" max="100">
+
+        <br><br>
+        <input type="submit" value="Generate Plot">
+    </form>
+
+    {% if plot_url %}
+        <h2>Plot for {{ selected_country }}</h2>
+        <img src="{{ plot_url }}" alt="Plot Image">
+    {% else %}
+        <h2>No sufficient data available for {{ selected_country }} in the selected range.</h2>
+    {% endif %}
+</body>
+</html>

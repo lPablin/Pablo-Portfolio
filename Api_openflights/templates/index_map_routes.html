@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airports Map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Airports Map</h1>
+
+        <!-- Menú desplegable para seleccionar el país de origen -->
+        <div class="mb-3">
+            <label for="countrySelect" class="form-label">Select Country (Origin):</label>
+            <select id="countrySelect" class="form-select">
+                <option value="none" selected>Select a Country</option>
+            </select>
+        </div>
+
+        <!-- Menú desplegable para seleccionar el aeropuerto de origen -->
+        <div class="mb-3">
+            <label for="airportSelect" class="form-label">Select Source Airport:</label>
+            <select id="airportSelect" class="form-select" disabled>
+                <option value="none" selected>Select an Airport</option>
+                <option value="all">All Airports</option>
+            </select>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Inicializar el mapa centrado en el mundo
+        var map = L.map('map').setView([20, 0], 2);
+
+        // Cargar el mapa base de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        function loadAirports(country) {
+            $.getJSON('/airports_in_country', { country: country }, function(data) {
+                clearMap();
+                $('#airportSelect').empty()
+                    .append(new Option("Select an Airport", "none"))
+                    .append(new Option("All Airports", "all"))
+                    .prop('disabled', false);
+                data.forEach(function(airport) {
+                    $('#airportSelect').append(new Option(`${airport.Name} (${airport.IATA})`, airport.IATA));
+                });
+            });
+        }
+
+        function loadRoutes(source, country) {
+            $.getJSON('/routes', { source: source, country: country }, function(data) {
+            console.log("Routes Data: ", data);  // Depuración
+            clearMap();
+            data.forEach(function(route) {
+                L.polyline([
+                    [route.source.Latitude, route.source.Longitude],
+                    [route.destination.Latitude, route.destination.Longitude]
+                ], {color: 'green'}).addTo(map);
+            });
+        });
+        }
+
+        function clearMap() {
+            map.eachLayer(function(layer) {
+                if (layer instanceof L.Marker || layer instanceof L.Polyline) {
+                    map.removeLayer(layer);
+                }
+            });
+        }
+
+        // Cargar la lista de países en el menú desplegable
+        $.getJSON('/countries', function(countries) {
+            countries.forEach(function(country) {
+                $('#countrySelect').append(new Option(country, country));
+            });
+        });
+
+        // Detectar cuando cambia la selección en el menú desplegable de países
+        $('#countrySelect').on('change', function() {
+            var selectedCountry = $(this).val();
+            if (selectedCountry && selectedCountry !== 'none') {
+                loadAirports(selectedCountry);
+            } else {
+                clearMap();
+                $('#airportSelect').prop('disabled', true).empty().append(new Option("Select an Airport", "none"));
+            }
+        });
+
+        // Detectar cuando cambia la selección en el menú desplegable de aeropuertos
+        $('#airportSelect').on('change', function() {
+            var selectedAirport = $(this).val();
+            if (selectedAirport && selectedAirport !== 'none') {
+                loadRoutes(selectedAirport);
+            } else {
+                clearMap();
+            }
+        });
+    </script>
+</body>
+</html>

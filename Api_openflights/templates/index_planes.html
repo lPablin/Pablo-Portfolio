@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation API - Planes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-T69G7lVnC7jz5bCXaEhUt5RRG4tu1jx4N2ggKRVqudBCQ0rceOM40YU1oLbG6jG/evDJw1LZTW+2Ko17EUaB1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="mb-3">
+            <!-- Botón para regresar al inicio -->
+            <a href="/" class="btn btn-primary"><i class="fas fa-home"></i> Home</a>
+        <h1 class="text-center">Planes</h1>
+        <!-- Campo de búsqueda -->
+        <div class="mb-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Search by name, IATA, ICAO, country, etc.">
+        </div>
+        <!-- Tabla de aerolíneas -->
+        <table class="table table-bordered table-striped" id="planes-table">
+            <thead>
+                <tr>
+                    <th>Aircraft Name</th>
+                    <th>IATA Code</th>
+                    <th>ICAO Code</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                {% for plane in planes %}
+                <tr>
+                    <td>{{ plane.Aircraft_Name }}</td>
+                    <td>{{ plane.IATA_Code }}</td>
+                    <td>{{ plane.ICAO_Code }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript para manejar la búsqueda -->
+    <script>
+        document.getElementById('search-input').addEventListener('input', function() {
+            let filter = this.value.toUpperCase();
+            let rows = document.querySelectorAll('#table-body tr');
+
+            rows.forEach(row => {
+                let text = row.textContent.toUpperCase();
+                if (text.includes(filter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

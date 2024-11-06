@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Form</title>
+
+    <!-- Bootstrap CSS para diseño -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Options for the Plot</h2>
+        <form method="POST" action="{{ url_for('world_map') }}">
+
+            <!-- Selector de rango de años -->
+            <div class="form-group">
+                <label for="year_start">Start Year:</label>
+                <input type="number" name="year_start" id="year_start" class="form-control" min="1995" max="2010" value="1999">
+            </div>
+
+            <div class="form-group">
+                <label for="year_end">End Year:</label>
+                <input type="number" name="year_end" id="year_end" class="form-control" min="1995" max="2010" value="2001">
+            </div>
+
+            <!-- Número de jugadores top -->
+            <div class="form-group">
+                <label for="top_players">Number of Top Players:</label>
+                <input type="number" name="top_players" id="top_players" class="form-control" value="10" min="1">
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit" class="btn btn-primary">Generate Plot</button>
+        </form>
+
+        <!-- Botón para volver al inicio -->
+        <a href="{{ url_for('home') }}" class="btn btn-primary mt-3">
+            <i class="fas fa-home"></i> Home
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation API - Airports</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Airports</h1>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>ICAO</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Altitude</th>
+                    <th>Timezone</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for airport in airports %}
+                <tr>
+                    <td>{{ airport.City }}</td>
+                    <td>{{ airport.Country }}</td>
+                    <td>{{ airport.ICAO }}</td>
+                    <td>{{ airport.Latitude }}</td>
+                    <td>{{ airport.Longitude }}</td>
+                    <td>{{ airport.Altitude }}</td>
+                    <td>{{ airport.Timezone }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
