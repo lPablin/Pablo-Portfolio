@@ -1,0 +1,120 @@
+create table clientes (
+	id_cliente serial primary key,
+	usuario varchar(40) 
+ );
+
+create table acciones_empresas (
+	id_empresa serial primary key,
+	nombre_empresa varchar(40),
+	precio_accion decimal(10,2)
+	);
+---------------------------
+create table mov_acciones (
+   id_mov serial PRIMARY KEY,
+   id_cliente  INT ,
+   id_empresa INT,
+   numero_acciones_compra_venta INT,
+   precio_compra_venta_accion decimal(10,2),
+   fecha_movimiento timestamp,
+   CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente) ON DELETE CASCADE,
+   CONSTRAINT fk_id_empresa FOREIGN KEY (id_empresa) REFERENCES acciones_empresas(id_empresa) ON DELETE CASCADE
+ );
+---------------------------
+create table acciones(
+	id_accion serial PRIMARY KEY,
+	id_cliente  INT ,
+    id_empresa INT,
+    numero_acciones INT,
+	riesgo varchar(20) null,
+	precio__compra_accion decimal(20,2),
+	CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
+	CONSTRAINT fk_id_empresa FOREIGN KEY (id_empresa) REFERENCES acciones_empresas(id_empresa) ON DELETE CASCADE
+ );
+---------------------------
+create table bonos (
+   id_bonos serial primary key,
+   id_cliente INT,
+   emisor_bono varchar(40),
+   valor_nominal decimal(10,2),
+   tasa_de_interes decimal(10,2),
+   fecha_emision date,
+   fecha_vencimiento date,
+   riesgo varchar(20) null,
+   CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
+);
+-----------------------------
+create table Depositos (
+   id_cliente INT,
+   banco varchar(30),
+   numero_cuenta varchar(40) PRIMARY KEY unique,
+   saldo_actual decimal(10,2),
+   interes decimal(10,2),
+   fecha_apertura date,
+   fecha_vencimiento date,
+   riesgo varchar(20) null,
+   CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
+);
+
+--------------------------------------------------------------------------------------
+                             Vistas
+--------------------------------------------------------------------------------------
+
+CREATE VIEW acciones_con_valor_total AS
+SELECT
+    mov.id_cliente,
+    ac_em.nombre_empresa,
+    SUM(CASE WHEN mov.precio_compra_venta_accion > 0 THEN mov.numero_acciones_compra_venta ELSE -mov.numero_acciones_compra_venta END) AS total_acciones,
+    ac_em.precio_accion,
+    SUM(CASE WHEN mov.precio_compra_venta_accion > 0 THEN mov.numero_acciones_compra_venta ELSE -mov.numero_acciones_compra_venta END) * ac_em.precio_accion AS valor_total
+FROM
+    mov_acciones mov
+JOIN
+    acciones_empresas ac_em ON mov.id_empresa = ac_em.id_empresa
+GROUP BY
+    mov.id_cliente,  ac_em.precio_accion,ac_em.nombre_empresa
+ORDER BY
+    mov.id_cliente, ac_em.nombre_empresa
+
+---------------------------------------
+
+CREATE VIEW activos_combinados AS
+SELECT
+    id_cliente,
+    'Acción' AS tipo,
+    nombre_empresa AS entidad,
+    total_acciones AS cantidad,
+    precio_accion AS precio_interes,
+    valor_total AS valor,
+	null as riesgo
+FROM
+    acciones_con_valor_total
+UNION ALL
+SELECT
+    id_cliente,
+    'Bono' AS tipo,
+    emisor_bono AS entidad,
+    valor_nominal AS cantidad,
+    tasa_de_interes AS precio_interes,
+    NULL AS valor,
+	riesgo 
+FROM
+    bonos
+UNION ALL
+SELECT
+    id_cliente,
+    'Depósito' AS tipo,
+    banco AS entidad,
+    saldo_actual AS cantidad,
+    interes AS precio_interes,
+    NULL AS valor,
+	riesgo 
+FROM
+    depositos;
+
+---------------------------------------
+
+Ejercicio 12
+select id_cliente,tipo,valor from activos_combinados ac1 where valor=(select MAX(valor) from activos_combinados ac2 where ac1.id_cliente=ac2.id_cliente);
+
+Ejercicio 13
+select id_cliente, nombre_empresa, cantidad from acciones_con_valor_total where nombre_empresa='Belgium'
