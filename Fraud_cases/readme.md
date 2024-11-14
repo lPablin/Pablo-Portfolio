@@ -8,7 +8,8 @@ This project drew significant attention from specialists in artificial intellige
 - Sender's and receiver's previous and subsequent balances
 - Type of transaction
 - Target variable indicating whether the transaction was fraudulent
-- Project Motivation
+
+ ## Project Motivation
 
 While using a neural network might be the initial approach for this problem, understanding the underlying theory is essential for achieving reliable results. A neural network is, in essence, a complex collection of linear regressions with activation functions. For this project, we selected logistic regression to achieve a simple, effective model with low overfitting risk—something that can be an issue with decision trees.
 
