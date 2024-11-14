@@ -1,6 +1,6 @@
-# Pablo Rodríguez Suárez - Portfolio
+# Welcome to my Data Science & Research Portfolio!
 
-Welcome to my portfolio! I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering after finishing a Data Science course of 610 hours. Now I have just started a SQL course from IBM and a Máster about Artificial Intelligence.
+I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering after finishing a Data Science course of 610 hours. Now I have just started a SQL course from IBM and a Máster about Artificial Intelligence.
 
 My core skills include data processing (MySQL, Pandas, MongoDB), machine learning (Scikit-learn, TensorFlow), and natural language processing (NLTK). I’m skilled in data extraction (Beautiful Soup, Selenium) and API development (Flask, FastAPI, Django). The projects in this portfolio showcase these abilities, reflecting my commitment to data science and engineering.
 
