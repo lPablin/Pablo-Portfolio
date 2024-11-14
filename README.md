@@ -34,14 +34,17 @@ This section includes a collection of academic projects completed during Data Sc
 
 This section highlights some of the research projects I conducted as a researcher. Each project applied advanced data science and modeling techniques to complex problems in physics and material sciences. While code and specific datasets are not publicly available due to confidentiality agreements, the following descriptions outline the objectives, methodologies, and general outcomes of each project.
 
-1- Stoner-Wohlfarth Magnetism Model
+1- Stoner-Wohlfarth Magnetism Model.
+
 This project involved the study and application of the Stoner-Wohlfarth model, a foundational theory in magnetism used to understand the magnetic properties of single-domain particles. I explored how this model explains hysteresis and magnetic reversal, crucial for applications in data storage and magnetic sensors. Through data-driven modeling, I aimed to enhance the understanding of how external magnetic fields influence material properties at a microscopic level.
 ![stoner](Stoner.png)
 
 2- Magneto-Optic Transfer Matrix with Matthias Schubert’s Methods
+
 In this project, I employed the magneto-optic transfer matrix technique developed by Dr. Matthias Schubert to analyze the optical response of magnetized materials. This method allowed for precise modeling of how electromagnetic waves interact with magnetic media, facilitating insights into material properties and enabling advancements in magnetic photonic device development. The transfer matrix approach, combined with spectroscopic data, provided a robust framework to study material responses to different light polarizations and incident angles.
 
 3- Localized Surface Plasmon Resonance (LSPR) and Surface Lattice Resonance in Nanostructured Spheres
+
 This project focused on modeling the optical properties of nanostructured spheres using LSPR and Surface Lattice Resonance (SLR) phenomena. By examining how nanoparticles resonate at certain frequencies of light, the research contributed to the development of novel plasmonic devices with applications in sensing, photonic circuitry, and biomedical devices. Using advanced data analysis methods, I studied how particle arrangement, size, and material properties affect the resonance behavior, providing insights for designing highly sensitive plasmonic sensors.
 
 Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project.
