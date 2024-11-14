@@ -9,10 +9,10 @@ My core skills include data processing (MySQL, Pandas, MongoDB), machine learnin
 This section includes a collection of academic projects completed during Data Science course of 610 hours in diCampus. Each project demonstrates different aspects of data science and machine learning, covering the entire data life cycle—from data extraction and cleaning to modeling and result visualization. These projects are fully documented and come with code to enable reproducibility and further exploration.
 
 1. [**♟️ Chess Gender Comparison API**](https://github.com/tu-usuario/chess-gender-comparison-api)  
-   My first Data Science project and the most interesting result from my Linkedin publications. I analized the gender equality at the top national list of chess players per year of birth. The project shows an interesting result on gender equality across continents.
+   My first Data Science project and the most interesting receiving a lot of feedback through comments on my LinkedIn. I analized the gender equality at the top national list of chess players per year of birth. The project shows an interesting result on gender equality across continents.
 
 2. [**🛡️💳 Fraud Detection**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Fraud_cases)
-   This project drew significant attention from specialists in artificial intelligence in the field(PhD cum laude and university professors), receiving positive reactions and insightful feedback on LinkedIn. The project focuses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores.
+   This project drew significant attention from specialists in the research field of artificial intelligence, receiving positive reactions on LinkedIn. The project focuses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores.
 
    Comparing models may seem straightforward, but there's still a significant element of art in tailoring the data, making it challenging to know if perfection was achieved. So this project shows the importance of treating the model as best as possible, and for that, it is necessary to understand it well and the situation it is in, making data science a field with many possible solutions.
    
