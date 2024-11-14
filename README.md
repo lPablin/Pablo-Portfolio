@@ -41,13 +41,15 @@ This project involved the study and application of the Stoner-Wohlfarth model, a
 
 2- Magneto-Optic Transfer Matrix with Matthias Schubert’s Methods
 
-In this project, I employed the magneto-optic transfer matrix technique developed by Dr. Matthias Schubert to analyze the optical response of magnetized materials. This method allowed for precise modeling of how electromagnetic waves interact with magnetic media, facilitating insights into material properties and enabling advancements in magnetic photonic device development. The transfer matrix approach, combined with spectroscopic data, provided a robust framework to study material responses to different light polarizations and incident angles.
+Developed a 4x4 transfer matrix model to study optical and magnetic properties of layered materials, adding machine learning techniques to identify ideal material parameters for peak performance.
 
 3- Localized Surface Plasmon Resonance (LSPR) and Surface Lattice Resonance in Nanostructured Spheres
 
-This project focused on modeling the optical properties of nanostructured spheres using LSPR and Surface Lattice Resonance (SLR) phenomena. By examining how nanoparticles resonate at certain frequencies of light, the research contributed to the development of novel plasmonic devices with applications in sensing, photonic circuitry, and biomedical devices. Using advanced data analysis methods, I studied how particle arrangement, size, and material properties affect the resonance behavior, providing insights for designing highly sensitive plasmonic sensors.
+Developed a model for analyzing localized surface plasmon resonance (LSPR) and surface lattice resonance in nanostructures—a model with less than a decade of research history. I also implemented optimization routines to fine-tune material properties and layer configurations for maximal resonance performance.
 
-Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project.
+Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project. 
+
+In addition, for example in the second project it is essential to use 4x4 matrices for greater detail on material properties. However, if you request this from ChatGPT, it will typically provide only 2x2 matrices, which limits the depth of analysis. This shows the complexity of them, and that in research we should teach the Artificial Intelligence how to do the things and not have dependence from them, as anybody know more about our research project than us.
 
 ## Contacto
 
