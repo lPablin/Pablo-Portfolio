@@ -1,6 +1,6 @@
 # Pablo-Portfolio
 
-Welcome to my portfolio! I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering after finishing a Data Science course of 610 hours and now I have just started a SQL course from IBM and a Máster about Artificial Intelligence.
+Welcome to my portfolio! I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering after finishing a Data Science course of 610 hours. Now I have just started a SQL course from IBM and a Máster about Artificial Intelligence.
 
 My core skills include data processing (MySQL, Pandas, MongoDB), machine learning (Scikit-learn, TensorFlow), and natural language processing (NLTK). I’m skilled in data extraction (Beautiful Soup, Selenium) and API development (Flask, FastAPI, Django). The projects in this portfolio showcase these abilities, reflecting my commitment to data science and engineering.
 
@@ -11,18 +11,16 @@ This section includes a collection of academic projects completed during Data Sc
 1. [**♟️ Chess Gender Comparison API**](https://github.com/tu-usuario/chess-gender-comparison-api)  
    My first Data Science project and the most interesting result from my Linkedin publications. I analized the gender equality at the top national list of chess players per year of birth. The project shows an interesting result on gender equality across continents.
 
-2. [**Fraud Detection project**](https://github.com/tu-usuario/proyecto-2)  
-   This project focueses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores.
+2. [**🛡️💳 Fraud Detection project**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Fraud_cases)
+   This project drew significant attention from specialists in artificial intelligence in the field(PhD cum laude and university professors), receiving positive reactions and insightful feedback on LinkedIn. The project focuses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores.
 
-   Comparing models may seem straightforward, but there's still a significant element of art in tailoring the data, making it challenging to know if perfection was achieved. Sot his project shows the importance of treating the model as best as possible, and for that, it is necessary to understand it well and the situation it is in, making data science a field with many possible solutions.
+   Comparing models may seem straightforward, but there's still a significant element of art in tailoring the data, making it challenging to know if perfection was achieved. So this project shows the importance of treating the model as best as possible, and for that, it is necessary to understand it well and the situation it is in, making data science a field with many possible solutions.
    
-3. [**Investment Asset Management System**](https://github.com/tu-usuario/proyecto-3)  
+3. [**📊 Investment Asset Management System**](https://github.com/lPablin/Pablo-Portfolio/tree/main/SQL_Table_for_bank)  
    This project stores the information of each on its clients, who will have their assets invested in one or more types of investements(stocks of other companies, bonds and bank deposits), in an Entity-Relationship Diagram(ERD) with SQL for a bank.
 
-4. [**✈️ Api flights between countries**](https://github.com/tu-usuario/proyecto-3)  
-   The aim of this project was to create an API that reveals all flight routes between countries and airports in 2013 from a MongoDB dataset, supporting better route analysis and planning.
-
-   There are some interesting results that could show the different economies situations between European countries that affects the flight system.
+4. [**✈️ Api flights between countries**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Api_openflights) 
+   The aim of this project was to create an API that reveals all flight routes between countries and airports in 2013 from a MongoDB dataset, supporting better route analysis and planning. There are some interesting results that could show the different economies situations between European countries that affects the flight system.
 
 5. [**🐦 Sentiment Analysis in tweets about the coach of a football team**](https://github.com/tu-usuario/proyecto-3)  
    This project aims to analyse the reaction of followers on the Twitter platform regarding sports results and which opinions have the greatest weight in society. This project can be optimized with very high expectations using some magnetism models that I studied during my research stage.
@@ -38,7 +36,7 @@ This section highlights some of the research projects I conducted as a researche
 
 Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project. 
 
-1. Stoner-Wohlfarth Magnetism Model.
+1. Stoner-Wohlfarth Magnetism Model
    This project involved the study and application of the Stoner-Wohlfarth model, a foundational theory in magnetism used to understand the magnetic properties of single-domain particles. I explored how this model explains hysteresis and magnetic reversal, crucial for applications in data storage and magnetic sensors. Through data-driven modeling, I aimed to enhance the understanding of how external magnetic fields influence material properties at a microscopic level.
 ![stoner](Stoner.png)
 
