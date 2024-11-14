@@ -22,10 +22,10 @@ This section includes a collection of academic projects completed during Data Sc
 4. [**✈️ Api flights between countries**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Api_openflights)
    The aim of this project was to create an API that reveals all flight routes between countries and airports in 2013 from a MongoDB dataset, supporting better route analysis and planning. There are some interesting results that could show the different economies situations between European countries that affects the flight system.
 
-5. [**🐦 Sentiment Analysis in tweets about the coach of a football team**](https://github.com/tu-usuario/proyecto-3)
+5. [**🐦 Sentiment Analysis in tweets about the coach of a football team**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Sentiment_analysis_coaches)
    This project aims to analyse the reaction of followers on the Twitter platform regarding sports results and which opinions have the greatest weight in society. This project can be optimized with very high expectations using some magnetism models that I studied during my research stage.
 
-6. [**🛒 Shopping Cart System with Object-Oriented Programming**](https://github.com/tu-usuario/proyecto-3)
+6. [**🛒 Shopping Cart System with Object-Oriented Programming**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Shopping_cart)
     A shopping system that, given a set of products, allow us to add them to a shopping cart with Object-Oriented Programming.
 
 
