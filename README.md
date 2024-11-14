@@ -12,18 +12,20 @@ This section includes a collection of academic projects completed during Data Sc
    My first Data Science project. I analized the gender equality at the top national list of chess players per year of birth. The project shows an interesting result on gender equality across continents receiving a lot of feedback through comments on my LinkedIn
 
 2. [**🛡️💳 Fraud Detection**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Fraud_cases)  
-   This project drew significant attention from specialists in the research field of artificial intelligence, receiving positive reactions on LinkedIn. The project focuses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores. Comparing models may seem straightforward, but there's still a significant element of art in tailoring the data, making it challenging to know if perfection was achieved. So this project shows the importance of treating the model as best as possible, and for that, it is necessary to understand it well and the situation it is in, making data science a field with many possible solutions.
+   This project drew significant attention from specialists in the research field of artificial intelligence, receiving positive reactions on LinkedIn. The project focuses on fraud detection using a logistic regression model, chosen for its simplicity and interpretability over more complex models like neural networks. The primary goal is to evaluate the model's performance through sensitivity and specificity scores.
+
+   Comparing models may seem straightforward, but there's still a significant element of art in tailoring the data, making it challenging to know if perfection was achieved. So this project shows the importance of treating the model as best as possible, and for that, it is necessary to understand it well and the situation it is in, making data science a field with many possible solutions.
    
-3. [**📊 Investment Asset Management System**](https://github.com/lPablin/Pablo-Portfolio/tree/main/SQL_Table_for_bank)  
+4. [**📊 Investment Asset Management System**](https://github.com/lPablin/Pablo-Portfolio/tree/main/SQL_Table_for_bank)  
    This project stores the information of each on its clients, who will have their assets invested in one or more types of investements(stocks of other companies, bonds and bank deposits), in an Entity-Relationship Diagram(ERD) with SQL for a bank.
 
-4. [**✈️ Api flights between countries**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Api_openflights)  
+5. [**✈️ Api flights between countries**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Api_openflights)  
    The aim of this project was to create an API that reveals all flight routes between countries and airports in 2013 from a MongoDB dataset, supporting better route analysis and planning. There are some interesting results that could show the different economies situations between European countries that affects the flight system.
 
-5. [**🐦 Sentiment Analysis in tweets about the coach of a football team**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Sentiment_analysis_coaches)  
-   This project aims to analyse the reaction of followers on the Twitter platform regarding sports results and which opinions have the greatest weight in society. This project can be optimized with very high expectations using some magnetism models that I studied during my research stage.
+6. [**🐦 Sentiment Analysis in tweets about the coach of a football team**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Sentiment_analysis_coaches)  
+   The aim is to analyse the reaction of followers on the Twitter platform regarding sports results and which opinions have the greatest weight in society. This project can be optimized with very high expectations using some magnetism models that I studied during my research stage.
 
-6. [**🛒 Shopping Cart System with Object-Oriented Programming**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Shopping_cart)  
+7. [**🛒 Shopping Cart System with Object-Oriented Programming**](https://github.com/lPablin/Pablo-Portfolio/tree/main/Shopping_cart)  
     A shopping system that, given a set of products, allow us to add them to a shopping cart with Object-Oriented Programming.
 
 
