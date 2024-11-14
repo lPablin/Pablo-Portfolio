@@ -1,6 +1,6 @@
 # Pablo-Portfolio
 
-Welcome to my portfolio! I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering.
+Welcome to my portfolio! I am Pablo Rodríguez, a research scientist with over 2 years of experience in Parma, Italy, and San Sebastián, Spain. I am enthusiastic about advancing my career in Data Science or Data Engineering after finishing a Data Science course of 610 hours and now I have just started a SQL course from IBM and a Máster about Artificial Intelligence.
 
 My core skills include data processing (MySQL, Pandas, MongoDB), machine learning (Scikit-learn, TensorFlow), and natural language processing (NLTK). I’m skilled in data extraction (Beautiful Soup, Selenium) and API development (Flask, FastAPI, Django). The projects in this portfolio showcase these abilities, reflecting my commitment to data science and engineering.
 
@@ -29,6 +29,8 @@ This section includes a collection of academic projects completed during Data Sc
 
 6. [**🛒 Shopping Cart System with Object-Oriented Programming**](https://github.com/tu-usuario/proyecto-3)  
    A shopping system that, given a set of products, allow us to add them to a shopping cart with Object-Oriented Programming.
+
+
  
 ## 🧪 Research Projects
 
@@ -49,10 +51,10 @@ Each of these projects was developed entirely from scratch, reflecting my commit
 
 Finally, for example in the second project it is essential to use 4x4 matrices for greater detail on material properties. However, if you request this from ChatGPT, it will typically provide only 2x2 matrices, which limits the depth of analysis. This shows the complexity of them, and that in research we should teach the Artificial Intelligence how to do the things and not have dependence from them, as anybody know more about our research project than us.
 
-## Contacto
+## Contact
 
 For more information about any project, feel free to contact me at:
-- [LinkedIn](https://linkedin.com/in/tu-usuario)
-- [Correo electrónico](mailto:tu-email@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/pablo-rodr%C3%ADguez-su%C3%A1rez-/)
+- [pablors10@hotmail.com](pablors10@hotmail.com)
 
 
