@@ -34,6 +34,10 @@ This section includes a collection of academic projects completed during Data Sc
 
 This section highlights some of the research projects I conducted as a researcher. Each project applied advanced data science and modeling techniques to complex problems in physics and material sciences. While code and specific datasets are not publicly available due to confidentiality agreements, the following descriptions outline the objectives, methodologies, and general outcomes of each project.
 
+Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project. 
+
+In addition, for example in the second project it is essential to use 4x4 matrices for greater detail on material properties. However, if you request this from ChatGPT, it will typically provide only 2x2 matrices, which limits the depth of analysis. This shows the complexity of them, and that in research we should teach the Artificial Intelligence how to do the things and not have dependence from them, as anybody know more about our research project than us.
+
 1- Stoner-Wohlfarth Magnetism Model.
 
 This project involved the study and application of the Stoner-Wohlfarth model, a foundational theory in magnetism used to understand the magnetic properties of single-domain particles. I explored how this model explains hysteresis and magnetic reversal, crucial for applications in data storage and magnetic sensors. Through data-driven modeling, I aimed to enhance the understanding of how external magnetic fields influence material properties at a microscopic level.
@@ -47,9 +51,7 @@ Developed a 4x4 transfer matrix model to study optical and magnetic properties o
 
 Developed a model for analyzing localized surface plasmon resonance (LSPR) and surface lattice resonance in nanostructures—a model with less than a decade of research history. I also implemented optimization routines to fine-tune material properties and layer configurations for maximal resonance performance.
 
-Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project. 
 
-In addition, for example in the second project it is essential to use 4x4 matrices for greater detail on material properties. However, if you request this from ChatGPT, it will typically provide only 2x2 matrices, which limits the depth of analysis. This shows the complexity of them, and that in research we should teach the Artificial Intelligence how to do the things and not have dependence from them, as anybody know more about our research project than us.
 
 ## Contacto
 
