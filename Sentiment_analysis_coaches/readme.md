@@ -15,7 +15,7 @@ Ensuring data quality was essential for accurate analysis. I removed unnecessary
 Using the VADER model, I conducted sentiment analysis to classify tweets as positive, negative, or neutral. However, this required significant adjustments:
 
 Colloquial Phrases: Phrases like "the coach won’t eat his Christmas turrón here" (implying an impending dismissal) were not interpreted correctly without additional tuning.
-Global Text Evaluation: VADER assigns an overall polarity score, which can misclassify mixed sentiments within complex sentences, such as, "We have the best roster but play terribly."
+Global Text Evaluation: VADER assigns an overall polarity score, which can misclassify mixed sentiments within complex sentences, such as, "We have the best team but we play terribly."
 
 4️⃣ Correlation Analysis
 As shown in the attached correlation matrix, I compared fan sentiment with sports metrics. Sentiment closely aligned with results (negative = loss) and ranking, but also with tweet volume: an increase in tweets about a coach often reflected negative sentiment. Early coaching changes often happened with teams with larger fanbases, as doubts arose quickly on social media.
