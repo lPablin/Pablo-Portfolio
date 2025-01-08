@@ -32,7 +32,7 @@ This section includes a collection of academic projects completed during Data Sc
  
 ## 🧪 Research Projects
 
-This section highlights some of the research projects I conducted as a researcher. Each project applied advanced data science and modeling techniques to complex problems in physics and material sciences. While code and specific datasets are not publicly available due to confidentiality agreements, the following descriptions outline the objectives, methodologies, and general outcomes of each project.
+This section highlights some of the research projects I conducted as a researcher. Each project applied advanced data science, machine learning and modeling techniques to complex problems in physics and material sciences. While code and specific datasets are not publicly available due to confidentiality agreements, the following descriptions outline the objectives, methodologies, and general outcomes of each project.
 
 Each of these projects was developed entirely from scratch, reflecting my commitment to creating custom, fully original solutions rather than refining existing code. This approach enabled complete control over model parameters, ensuring precision and innovation in each project. 
 
