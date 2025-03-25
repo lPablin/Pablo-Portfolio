@@ -20,5 +20,3 @@ Global Text Evaluation: VADER assigns an overall polarity score, which can miscl
 4️⃣ Correlation Analysis
 As shown in the attached correlation matrix, I compared fan sentiment with sports metrics. Sentiment closely aligned with results (negative = loss) and ranking, but also with tweet volume: an increase in tweets about a coach often reflected negative sentiment. Early coaching changes often happened with teams with larger fanbases, as doubts arose quickly on social media.
 
-5️⃣ Trend Analysis with Advanced Models
-As a future step, I plan to analyze shifts in public opinion using models inspired by the Ising spin model from statistical mechanics. This approach can help to simulate how individual fan sentiments—particularly when polarized—interact and influence broader shifts in public opinion, much like spins aligning in a magnetic field. By understanding these interactions, we can better observe how localized sentiment trends spread across the network and explore potential solutions to counteract or stabilize negative sentiment cascades.
